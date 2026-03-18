@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name — Software Engineering</title>
+  <title>Umar Aamir — Software Engineering</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -178,23 +178,8 @@
     /* ABOUT */
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .avatar-wrap {
-      aspect-ratio: 1;
-      border-radius: 12px;
-      background: var(--tag-bg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'DM Serif Display', serif;
-      font-size: 4rem;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      overflow: hidden;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
 
     .about-text p {
@@ -437,7 +422,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-logo">your.name</a>
+  <a href="#hero" class="nav-logo">umar.aamir</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -449,9 +434,9 @@
 <!-- HERO -->
 <section id="hero">
   <div class="container">
-    <p class="hero-label">Software Engineering · TMU · Year 3</p>
-    <h1 class="hero-name">Hi, I'm<br/><em>Your Name.</em></h1>
-    <p class="hero-sub">I build thoughtful software — from backend systems to polished web apps. Currently studying Software Engineering at Toronto Metropolitan University.</p>
+    <p class="hero-label">Computer Engineering (Co-op) · TMU · Year 2</p>
+    <h1 class="hero-name">Hi, I'm<br/><em>Umar Aamir.</em></h1>
+    <p class="hero-sub">I build reliable, full-stack software — from cloud-deployed microservices to data-driven web apps. Currently studying Computer Engineering (Co-op) at Toronto Metropolitan University.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View my work</a>
       <a href="#contact" class="btn btn-outline">Get in touch</a>
@@ -467,14 +452,15 @@
     <p class="section-label">About</p>
     <h2 class="section-title">A little about me</h2>
     <div class="about-grid">
-      <div class="avatar-wrap">
-        <!-- Replace this with an <img src="your-photo.jpg" style="width:100%;height:100%;object-fit:cover;" /> -->
-        YN
-      </div>
       <div class="about-text">
-        <p>I'm a <strong>third-year Software Engineering student at TMU</strong>, passionate about building software that's both functional and well-crafted.</p>
-        <p>I enjoy working across the stack — whether it's designing clean APIs, building intuitive UIs, or solving algorithmic challenges. I'm always looking for projects where I can learn something new.</p>
-        <p>Outside of coding, you'll find me exploring new tech, contributing to open source, or grabbing coffee somewhere in Toronto.</p>
+        <p>I'm a <strong>Computer Engineering Co-op student at Toronto Metropolitan University</strong>, passionate about building software that is reliable, clean, and solves real problems.</p>
+        <p>I'm comfortable working across the full stack — from designing microservices and cloud infrastructure to building responsive frontends. I've shipped projects using React, Python, Java EE, Docker, Kubernetes, and Google Cloud, and I thrive in agile, collaborative environments.</p>
+        <p>Currently based in Toronto and actively looking for co-op and internship opportunities.</p>
+        <div class="about-details">
+          <div class="about-detail"><span class="dot"></span> Toronto Metropolitan University — B.Eng Computer Engineering (Co-op)</div>
+          <div class="about-detail"><span class="dot"></span> Sep 2023 – Apr 2028</div>
+          <div class="about-detail"><span class="dot"></span> Open to co-op &amp; internship opportunities</div>
+        </div>
         <div class="about-details">
           <div class="about-detail"><span class="dot"></span> Toronto Metropolitan University</div>
           <div class="about-detail"><span class="dot"></span> Software Engineering, Year 3</div>
@@ -495,51 +481,56 @@
     <div class="projects-grid">
 
       <div class="project-card">
-        <div class="project-icon">🗂️</div>
-        <div class="project-title">Project One</div>
-        <p class="project-desc">A brief description of what this project does, the problem it solves, and what makes it interesting. Replace this with your own project details.</p>
+        <div class="project-icon">🏨</div>
+        <div class="project-title">Hotel Management System</div>
+        <p class="project-desc">Full-stack hotel platform built on a microservices architecture with three independent REST API services (Account, Room, Reservation). Features JWT auth, Kubernetes orchestration on GCP, and async inter-service messaging via KubeMQ.</p>
         <div class="project-tags">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">MongoDB</span>
+          <span class="tag">Java EE</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Google Cloud</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">JWT</span>
         </div>
-        <div class="project-link">→ View on GitHub</div>
+        <a class="project-link" href="https://github.com/UmarAamir/Hotel-Management-system/tree/main/Hotel%20Management%20System" target="_blank">→ View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">🔍</div>
-        <div class="project-title">Project Two</div>
-        <p class="project-desc">Describe your second project here. What tech did you use? What did you learn? Keep it concise but compelling.</p>
+        <div class="project-icon">🛒</div>
+        <div class="project-title">ShopSphere</div>
+        <p class="project-desc">Database-driven retail management system with normalized relational schemas, complex SQL queries for inventory and sales reporting, and UNIX shell scripts to automate backend workflows.</p>
         <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Flask</span>
-          <span class="tag">PostgreSQL</span>
+          <span class="tag">Oracle SQL</span>
+          <span class="tag">Java</span>
+          <span class="tag">UNIX Shell</span>
+          <span class="tag">Database Design</span>
         </div>
-        <div class="project-link">→ View on GitHub</div>
+        <a class="project-link" href="https://github.com/UmarAamir/ShopSphere-Database" target="_blank">→ View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">📡</div>
-        <div class="project-title">Project Three</div>
-        <p class="project-desc">Add your third project. Highlight any cool features, the scale of the project, or interesting technical decisions you made.</p>
+        <div class="project-icon">📚</div>
+        <div class="project-title">Bookstore Analytics App</div>
+        <p class="project-desc">A JavaFX desktop app simulating a bookstore management system. Features a login screen routing to role-based interfaces (Owner and Customer) built on a shared abstract User class. The Owner side supports viewing, adding, and deleting books with input validation and automatic data persistence via Java file I/O (BufferedReader/BufferedWriter).</p>
         <div class="project-tags">
           <span class="tag">Java</span>
-          <span class="tag">Spring Boot</span>
-          <span class="tag">REST API</span>
+          <span class="tag">JavaFX</span>
+          <span class="tag">OOP</span>
+          <span class="tag">File I/O</span>
         </div>
-        <div class="project-link">→ View on GitHub</div>
+        <a class="project-link" href="https://github.com/UmarAamir/bookStoreApp" target="_blank">→ View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <div class="project-icon">⚡</div>
-        <div class="project-title">Project Four</div>
-        <p class="project-desc">A fourth project slot. Maybe a class project, a hackathon submission, or something you built just for fun.</p>
+        <div class="project-icon">⚙️</div>
+        <div class="project-title">General CPU Design</div>
+        <p class="project-desc">Designed a general-purpose CPU architecture including ALU, control unit, registers, and instruction set. Simulated the full fetch-decode-execute cycle at the hardware level as part of embedded systems coursework.</p>
         <div class="project-tags">
-          <span class="tag">TypeScript</span>
-          <span class="tag">Next.js</span>
-          <span class="tag">Tailwind</span>
+          <span class="tag">VHDL</span>
+          <span class="tag">Computer Architecture</span>
+          <span class="tag">Embedded Systems</span>
         </div>
-        <div class="project-link">→ View on GitHub</div>
+        <a class="project-link" href="https://github.com/UmarAamir/General-CPU-design" target="_blank">→ View on GitHub</a>
       </div>
 
     </div>
@@ -557,31 +548,31 @@
       <div class="skill-group">
         <div class="skill-group-title">Languages</div>
         <div class="skill-list">
-          <div class="skill-item">Java</div>
-          <div class="skill-item">Python</div>
           <div class="skill-item">JavaScript / TypeScript</div>
-          <div class="skill-item">C / C++</div>
-          <div class="skill-item">SQL</div>
+          <div class="skill-item">Python</div>
+          <div class="skill-item">Java</div>
+          <div class="skill-item">C#</div>
+          <div class="skill-item">SQL / Linux Shell</div>
         </div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-title">Frameworks & Tools</div>
+        <div class="skill-group-title">Frameworks &amp; Web</div>
         <div class="skill-list">
-          <div class="skill-item">React / Next.js</div>
-          <div class="skill-item">Node.js / Express</div>
-          <div class="skill-item">Spring Boot</div>
-          <div class="skill-item">Flask / FastAPI</div>
-          <div class="skill-item">Git &amp; GitHub</div>
+          <div class="skill-item">React</div>
+          <div class="skill-item">Node.js</div>
+          <div class="skill-item">Flask</div>
+          <div class="skill-item">REST APIs &amp; JWT</div>
+          <div class="skill-item">.NET (familiar)</div>
         </div>
       </div>
       <div class="skill-group">
-        <div class="skill-group-title">Concepts</div>
+        <div class="skill-group-title">Cloud &amp; DevOps</div>
         <div class="skill-list">
-          <div class="skill-item">Data Structures &amp; Algorithms</div>
-          <div class="skill-item">REST APIs</div>
-          <div class="skill-item">Databases (SQL &amp; NoSQL)</div>
-          <div class="skill-item">OOP &amp; Design Patterns</div>
-          <div class="skill-item">Agile / Scrum</div>
+          <div class="skill-item">Docker &amp; Kubernetes</div>
+          <div class="skill-item">Google Cloud Platform</div>
+          <div class="skill-item">AWS (familiar)</div>
+          <div class="skill-item">CI/CD &amp; Git</div>
+          <div class="skill-item">PostgreSQL / MySQL / Oracle SQL</div>
         </div>
       </div>
     </div>
@@ -597,19 +588,13 @@
       <p class="section-label" style="text-align:center;">Contact</p>
       <h2 class="section-title" style="margin-bottom:1rem;">Let's connect</h2>
       <p class="contact-sub">Whether it's an internship, a cool project, or just to say hi — my inbox is open.</p>
-      <a href="mailto:your@email.com" class="btn btn-primary">Say hello →</a>
+      <a href="/cdn-cgi/l/email-protection#196c74786b37787874706b596d766b76776d76746c377a78" class="btn btn-primary">Say hello →</a>
       <div class="social-links">
-        <a href="https://github.com/yourusername" class="social-link" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">LinkedIn</a>
-        <a href="resume.pdf" class="social-link" target="_blank">Resume</a>
+        <a href="https://github.com/UmarAamir" class="social-link" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/umar-aamir-10446a236/" class="social-link" target="_blank">LinkedIn</a>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  built with care · your.name · 2025
-</footer>
-
-</body>
-</html>
+<f
